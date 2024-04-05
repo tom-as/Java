@@ -27,8 +27,9 @@ public class Main {
 		String director = sc.nextLine();
 		System.out.println("Ingrese el actor: ");
 		String actor = sc.nextLine();
-		System.out.println("Ingrese el anio: ");
+		System.out.println("Ingrese el año: ");
 		int year = sc.nextInt();
+		sc.close();
 		
 		  
 		Movie currentMovie = new Movie(title, director, actor, year) ;
@@ -47,6 +48,7 @@ public class Main {
 			System.out.println("Error, las opciones son 0 o 1.");
 			willContinue();
 		}
+		sc.close();
 		
 		return willContinue;
 	}
