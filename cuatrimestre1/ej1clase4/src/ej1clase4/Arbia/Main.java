@@ -24,12 +24,14 @@ public class Main {
 		System.out.println("Ingrese el titulo: ");
 		String title = sc.nextLine();
 		System.out.println("Ingrese el director: ");
-		String director = sc.nextLine();
+		String directorName = sc.nextLine();
+		Director director = new Director();
+		director.setName = directorName;
 		System.out.println("Ingrese el actor: ");
 		String actor = sc.nextLine();
 		System.out.println("Ingrese el año: ");
 		int year = sc.nextInt();
-		sc.close();
+		//sc.close();
 		
 		  
 		Movie currentMovie = new Movie(title, director, actor, year) ;
@@ -63,6 +65,6 @@ public class Main {
         }
 		
 	}
-
+	
 }
 
